@@ -1,0 +1,18 @@
+﻿@inherits ViewPropertyComponentBase
+
+@if (Count.HasValue)
+{
+    <p>Your magic number is @Count.</p>
+}
+else
+{
+    <p>Loading, please wait...</p>
+}
+
+
+@code {
+
+    [Parameter]
+    public ViewProperty<int> Count { get; set; }
+
+}
